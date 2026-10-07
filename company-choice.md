@@ -1,4 +1,4 @@
-#Company Choice - Nexova Solutions
+# Company Choice - Nexova Solutions
 
 He decidido optar por la empresa Nexova Solutions.
 
