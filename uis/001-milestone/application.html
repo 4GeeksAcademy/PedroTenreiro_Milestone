@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Join Our Talent Pool | Nexova</title>
+  <meta name="description" content="Register your professional profile with Nexova. Explore future opportunities in technology, retail, finance, and consulting in Spain and the United States.">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/tailwind.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script src="validation.js" defer></script>
+</head>
+<body class="bg-white font-['Source_Sans_3',sans-serif] text-neutral-900 antialiased">
+  <a href="#main" class="sr-only z-50 rounded-sm bg-white px-5 py-3 font-semibold text-emerald-900 focus:not-sr-only focus:fixed focus:top-2 focus:left-2 focus:outline-2 focus:outline-offset-2 focus:outline-emerald-700">Skip to content</a>
+  <header class="border-b border-neutral-200 bg-white">
+    <div class="mx-auto flex max-w-7xl flex-wrap items-center justify-between gap-x-6 gap-y-3 px-5 py-5 sm:px-8 lg:px-12">
+      <a href="index.html" aria-label="Nexova home" class="text-3xl font-bold text-emerald-950 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-emerald-700">nexova<span class="text-orange-700">.</span></a>
+      <nav aria-label="Main navigation" class="w-full sm:w-auto">
+        <ul class="flex flex-wrap items-center gap-x-5 gap-y-2 text-base font-semibold sm:gap-x-8">
+          <li><a href="index.html#home" class="inline-block py-2 hover:underline hover:underline-offset-8 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-emerald-700">Home</a></li>
+          <li><a href="index.html#services" class="inline-block py-2 hover:underline hover:underline-offset-8 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-emerald-700">Services</a></li>
+          <li><a href="application.html" aria-current="page" class="inline-block py-2 text-emerald-800 underline decoration-2 underline-offset-8 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-emerald-700">Talent</a></li>
+          <li><a href="index.html#contact" class="inline-block py-2 hover:underline hover:underline-offset-8 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-emerald-700">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main id="main" tabindex="-1">
+    <section aria-labelledby="application-heading" class="border-b border-neutral-200 bg-neutral-100 px-5 py-12 sm:px-8 lg:px-12">
+      <div class="mx-auto max-w-4xl">
+        <p class="text-sm font-bold uppercase text-emerald-800">Nexova talent network</p>
+        <h1 id="application-heading" class="mt-3 text-4xl leading-tight font-bold sm:text-5xl">Make room for your next opportunity.</h1>
+        <p class="mt-5 max-w-2xl text-lg leading-relaxed text-neutral-700">Tell us about your experience and where you want to go. We're here for your next chapter, whether you're ready now or just exploring.</p>
+        <p class="mt-6 border-l-2 border-orange-700 pl-4 text-neutral-700">Are you a company looking for talent? Write to us at <a href="mailto:contacto@nexova.com" class="break-words font-semibold text-emerald-900 underline underline-offset-4 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-emerald-700">contacto@nexova.com</a></p>
+      </div>
+    </section>
+    <div class="mx-auto max-w-4xl px-5 py-12 sm:px-8 lg:py-16">
+      <p class="mb-8 text-sm text-neutral-600">Required fields are marked <span aria-hidden="true">*</span>. Demonstration registration: no information is sent or saved.</p>
+      <noscript><p class="mb-6 border-l-2 border-red-700 bg-red-50 p-4 text-red-800">JavaScript is required to validate this demonstration form. Submission is unavailable without it.</p></noscript>
+      <p id="form-status" aria-live="polite" aria-atomic="true" class="sr-only"></p>
+      <form id="talent-form" action="application.html" method="post">
+        <fieldset class="min-w-0 border-b border-neutral-200 pb-10">
+          <legend class="mb-6 text-2xl font-semibold">Contact details</legend>
+          <div class="grid gap-x-6 gap-y-6 md:grid-cols-2">
+            <div class="min-w-0 md:col-span-2">
+              <label for="full-name" class="block font-semibold">Full name <span aria-hidden="true">*</span></label>
+              <input id="full-name" name="full-name" type="text" required autocomplete="name" aria-describedby="full-name-error" class="mt-2 min-h-12 w-full rounded-sm border border-neutral-500 bg-white px-3 py-3 focus:border-emerald-700 focus:outline-2 focus:outline-offset-2 focus:outline-emerald-700">
+              <p id="full-name-error" hidden class="mt-2 text-sm font-semibold text-red-800"></p>
+            </div>
+            <div class="min-w-0">
+              <label for="email" class="block font-semibold">Email <span aria-hidden="true">*</span></label>
+              <input id="email" name="email" type="email" required autocomplete="email" aria-describedby="email-error" class="mt-2 min-h-12 w-full rounded-sm border border-neutral-500 bg-white px-3 py-3 focus:border-emerald-700 focus:outline-2 focus:outline-offset-2 focus:outline-emerald-700">
+              <p id="email-error" hidden class="mt-2 text-sm font-semibold text-red-800"></p>
+            </div>
+            <div class="min-w-0">
+              <label for="phone" class="block font-semibold">Phone <span aria-hidden="true">*</span></label>
+              <input id="phone" name="phone" type="tel" required autocomplete="tel" placeholder="+34 612 345 678" aria-describedby="phone-error" class="mt-2 min-h-12 w-full rounded-sm border border-neutral-500 bg-white px-3 py-3 focus:border-emerald-700 focus:outline-2 focus:outline-offset-2 focus:outline-emerald-700">
+              <p id="phone-error" hidden class="mt-2 text-sm font-semibold text-red-800"></p>
+            </div>
+            <div class="min-w-0 md:col-span-2">
+              <label for="country-of-residence" class="block font-semibold">Country of residence <span aria-hidden="true">*</span></label>
+              <select id="country-of-residence" name="country-of-residence" required autocomplete="country-name" aria-describedby="country-of-residence-error" class="mt-2 min-h-12 w-full rounded-sm border border-neutral-500 bg-white px-3 py-3 focus:border-emerald-700 focus:outline-2 focus:outline-offset-2 focus:outline-emerald-700"><option value="">Select your country</option><option>Spain</option><option>United States</option><option>Other</option></select>
+              <p id="country-of-residence-error" hidden class="mt-2 text-sm font-semibold text-red-800"></p>
+            </div>
+          </div>
+        </fieldset>
+        <fieldset class="mt-10 min-w-0 border-b border-neutral-200 pb-10">
+          <legend class="mb-6 text-2xl font-semibold">Professional profile</legend>
+          <div class="grid gap-x-6 gap-y-6 md:grid-cols-2">
+            <div class="min-w-0">
+              <label for="years-of-experience" class="block font-semibold">Years of experience <span aria-hidden="true">*</span></label>
+              <input id="years-of-experience" name="years-of-experience" type="number" min="0" max="50" step="any" required aria-describedby="years-of-experience-error" class="mt-2 min-h-12 w-full rounded-sm border border-neutral-500 bg-white px-3 py-3 focus:border-emerald-700 focus:outline-2 focus:outline-offset-2 focus:outline-emerald-700">
+              <p id="years-of-experience-error" hidden class="mt-2 text-sm font-semibold text-red-800"></p>
+            </div>
+            <div class="min-w-0">
+              <label for="sector-of-interest" class="block font-semibold">Sector of interest <span aria-hidden="true">*</span></label>
+              <select id="sector-of-interest" name="sector-of-interest" required aria-describedby="sector-of-interest-error" class="mt-2 min-h-12 w-full rounded-sm border border-neutral-500 bg-white px-3 py-3 focus:border-emerald-700 focus:outline-2 focus:outline-offset-2 focus:outline-emerald-700"><option value="">Select your sector</option><option>Technology</option><option>Retail</option><option>Financial Services</option><option>Consulting</option><option>Other</option></select>
+              <p id="sector-of-interest-error" hidden class="mt-2 text-sm font-semibold text-red-800"></p>
+            </div>
+            <div class="min-w-0">
+              <label for="english-level" class="block font-semibold">English level <span aria-hidden="true">*</span></label>
+              <select id="english-level" name="english-level" required aria-describedby="english-level-error" class="mt-2 min-h-12 w-full rounded-sm border border-neutral-500 bg-white px-3 py-3 focus:border-emerald-700 focus:outline-2 focus:outline-offset-2 focus:outline-emerald-700"><option value="">Select your level</option><option>Basic</option><option>Intermediate</option><option>Advanced</option><option>Native</option></select>
+              <p id="english-level-error" hidden class="mt-2 text-sm font-semibold text-red-800"></p>
+            </div>
+            <div class="min-w-0">
+              <label for="linkedin" class="block font-semibold">LinkedIn (profile URL) <span class="font-normal text-neutral-600">(optional)</span></label>
+              <input id="linkedin" name="linkedin" type="url" placeholder="https://linkedin.com/in/your-name" autocomplete="url" aria-describedby="linkedin-error" class="mt-2 min-h-12 w-full rounded-sm border border-neutral-500 bg-white px-3 py-3 focus:border-emerald-700 focus:outline-2 focus:outline-offset-2 focus:outline-emerald-700">
+              <p id="linkedin-error" hidden class="mt-2 text-sm font-semibold text-red-800"></p>
+            </div>
+          </div>
+        </fieldset>
+        <fieldset id="availability-group" aria-describedby="availability-error" class="mt-10 min-w-0">
+          <legend class="mb-4 text-xl font-semibold">Availability <span aria-hidden="true">*</span></legend>
+          <div class="grid gap-3 sm:grid-cols-2">
+            <div class="flex min-h-12 items-center gap-3"><input id="availability-immediate" name="availability" type="radio" value="Immediate" required aria-describedby="availability-error" class="size-5 shrink-0 accent-emerald-800 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-emerald-700"><label for="availability-immediate" class="py-2">Immediate</label></div>
+            <div class="flex min-h-12 items-center gap-3"><input id="availability-one-month" name="availability" type="radio" value="1 month" required aria-describedby="availability-error" class="size-5 shrink-0 accent-emerald-800 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-emerald-700"><label for="availability-one-month" class="py-2">1 month</label></div>
+            <div class="flex min-h-12 items-center gap-3"><input id="availability-two-three-months" name="availability" type="radio" value="2-3 months" required aria-describedby="availability-error" class="size-5 shrink-0 accent-emerald-800 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-emerald-700"><label for="availability-two-three-months" class="py-2">2-3 months</label></div>
+            <div class="flex min-h-12 items-center gap-3"><input id="availability-exploring" name="availability" type="radio" value="Just exploring" required aria-describedby="availability-error" class="size-5 shrink-0 accent-emerald-800 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-emerald-700"><label for="availability-exploring" class="py-2">Just exploring</label></div>
+          </div>
+          <p id="availability-error" hidden class="mt-2 text-sm font-semibold text-red-800"></p>
+        </fieldset>
+        <div class="mt-8">
+          <label for="additional-comments" class="block font-semibold">Additional comments <span class="font-normal text-neutral-600">(optional)</span></label>
+          <textarea id="additional-comments" name="additional-comments" rows="4" maxlength="500" aria-describedby="comments-counter additional-comments-error" class="mt-2 w-full resize-y rounded-sm border border-neutral-500 bg-white px-3 py-3 focus:border-emerald-700 focus:outline-2 focus:outline-offset-2 focus:outline-emerald-700"></textarea>
+          <p id="comments-counter" class="mt-2 text-sm text-neutral-600">500 characters remaining</p>
+          <p id="additional-comments-error" hidden class="mt-2 text-sm font-semibold text-red-800"></p>
+        </div>
+        <div class="mt-8 border-t border-neutral-200 pt-8">
+          <div class="flex items-start gap-3"><input id="data-policy" name="data-policy" type="checkbox" required aria-describedby="data-policy-note data-policy-error" class="mt-1 size-5 shrink-0 accent-emerald-800 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-emerald-700"><label for="data-policy" class="font-semibold">I accept the data policy <span aria-hidden="true">*</span></label></div>
+          <p id="data-policy-note" class="mt-3 text-sm text-neutral-600">Data policy approval is pending. This demonstration does not collect applications. Do not include sensitive information.</p>
+          <p id="data-policy-error" hidden class="mt-2 text-sm font-semibold text-red-800"></p>
+        </div>
+        <div class="mt-8 flex flex-wrap gap-4">
+          <button id="submit-application" type="submit" disabled class="min-h-12 w-full rounded-sm bg-emerald-800 px-6 py-3 font-bold text-white hover:bg-emerald-950 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-emerald-700 disabled:cursor-not-allowed disabled:opacity-50 sm:w-auto">Submit application</button>
+          <button type="reset" class="min-h-12 w-full rounded-sm border border-neutral-400 bg-white px-6 py-3 font-semibold hover:bg-neutral-100 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-emerald-700 sm:w-auto">Clear form</button>
+        </div>
+      </form>
+      <section id="success" hidden aria-labelledby="success-heading" class="mt-10 border-l-4 border-emerald-800 bg-emerald-50 p-6">
+        <h2 id="success-heading" tabindex="-1" class="text-2xl font-semibold text-emerald-950 focus:outline-2 focus:outline-offset-4 focus:outline-emerald-700">Thank you for your interest in Nexova!</h2>
+        <p class="mt-4 leading-relaxed">We have received your information. Our selection team will review it and contact you if your profile matches any of our current or future opportunities.</p>
+        <p class="mt-4 leading-relaxed">In the meantime, follow us on <a href="https://linkedin.com/company/nexova" class="font-semibold text-emerald-900 underline underline-offset-4 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-emerald-700">LinkedIn</a> to stay updated on our vacancies and professional development content.</p>
+        <p class="mt-4 text-sm text-neutral-700">Simulated confirmation only. No information has been sent or saved.</p>
+      </section>
+    </div>
+  </main>
+  <footer class="border-t border-neutral-200 px-5 py-10 sm:px-8 lg:px-12">
+    <div class="mx-auto max-w-7xl">
+      <div class="flex flex-wrap items-start justify-between gap-6"><p class="text-2xl font-bold text-emerald-950">nexova<span class="text-orange-700">.</span></p><address class="flex flex-wrap gap-x-6 gap-y-3 text-sm not-italic"><a href="mailto:contacto@nexova.com" class="underline underline-offset-4 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-emerald-700">contacto@nexova.com</a><a href="tel:+34960123456" class="underline underline-offset-4 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-emerald-700">Valencia: +34 960 123 456</a><a href="tel:+13055550191" class="underline underline-offset-4 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-emerald-700">Miami: +1 305 555 0191</a></address></div>
+      <div class="mt-8 flex flex-wrap justify-between gap-4 border-t border-neutral-200 pt-6 text-sm text-neutral-600"><p>© 2025 Nexova. All rights reserved.</p><nav aria-label="Social media"><ul class="flex gap-6"><li><a href="https://linkedin.com/company/nexova" class="underline underline-offset-4 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-emerald-700">LinkedIn</a></li><li><a href="https://instagram.com/nexova" class="underline underline-offset-4 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-emerald-700">Instagram</a></li></ul></nav></div>
+    </div>
+  </footer>
+</body>
+</html>
